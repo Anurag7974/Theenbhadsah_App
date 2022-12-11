@@ -1,6 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Theenbhadsah</string>
     <string name="welcome_to">Welcome to</string>
+    <string name="oooo">oooo</string>
+    <string name="theenbhadsah_chart">Theenbhadsah Chart</string>
+    <string name="lifetime_chart"><![CDATA[यहां पर आपको डेली ट्रिक, LifeTime Chart, सिंगल जोडी चार्ट, ओपन ट्रिक, जोडी ट्रिक, स्पेशल चार्ट मिलेगा।]]></string>
+    <string name="welcome_back">* Welcome Back *</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="accoutn">आपका कोई खाता नहीं है, इसलिए इसे क्लिक करें -> </string>
+    <string name="hindi"><![CDATA[आपका कोई खाता नहीं है, इसलिए इसे क्लिक करें ->]]></string>
 
     />
 </resources>

@@ -1,9 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundxp"
     tools:context=".loginScreen">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="235dp"
+        android:layout_height="195dp"
+        android:text="@string/lifetime_chart"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/welcome_back"
+       android:textSize="25sp"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:layout_gravity="center"
+       android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:text="तीन बादशाह चार्ट में आप सभी लोगो का स्वागत है।"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:hint="@string/phone_number"
+        android:inputType="number"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        android:background="@drawable/edittextbackground"/>
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:hint="@string/password"
+        android:gravity="center"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_password"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="15sp"
+        android:background="@drawable/loginbackground"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hindi"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
