@@ -4,12 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Theenbhadsah/app/src/main/res/drawable/edittextbackground.xml" value="0.145" />
-        <entry key="..\:/Theenbhadsah/app/src/main/res/drawable/edittextbackgroundd.xml" value="0.145" />
-        <entry key="..\:/Theenbhadsah/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.145" />
         <entry key="..\:/Theenbhadsah/app/src/main/res/drawable/loginbackground.xml" value="0.145" />
         <entry key="..\:/Theenbhadsah/app/src/main/res/layout/activity_login_screen.xml" value="0.25677083333333334" />
         <entry key="..\:/Theenbhadsah/app/src/main/res/layout/activity_main.xml" value="0.25677083333333334" />
-        <entry key="..\:/Theenbhadsah/app/src/main/res/layout/activity_sign_up_screen.xml" value="0.25677083333333334" />
         <entry key="..\:/Theenbhadsah/app/src/main/res/layout/splashscreen.xml" value="0.25677083333333334" />
       </map>
     </option>
