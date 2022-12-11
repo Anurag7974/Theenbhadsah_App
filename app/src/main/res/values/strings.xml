@@ -12,6 +12,11 @@
     <string name="sign_up">SIGN UP</string>
     <string name="accoutn">आपका कोई खाता नहीं है, इसलिए इसे क्लिक करें -> </string>
     <string name="hindi"><![CDATA[आपका कोई खाता नहीं है, इसलिए इसे क्लिक करें ->]]></string>
+    <string name="hello">Hello,</string>
+    <string name="create_account">Create Account</string>
+    <string name="password2">Password</string>
+    <string name="sign_up2">Sign Up</string>
+    <string name="login2">Login</string>
 
     />
 </resources>
