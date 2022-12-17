@@ -6,8 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/backgroundxp"
-    tools:context=".loginScreen">
+    tools:context=".loginScreen"
+    tools:ignore="ExtraText">
 
+    // IntroLine Text
     <TextView
         android:id="@+id/intro"
         android:layout_width="235dp"
@@ -17,6 +19,8 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_margin="10dp"/>
+
+    // Welcome Text
    <TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
@@ -27,6 +31,7 @@
        android:layout_gravity="center"
        android:layout_margin="10dp" />
 
+    // Hindi Text
     <TextView
         android:layout_width="362dp"
         android:layout_height="60dp"
@@ -37,28 +42,52 @@
         android:layout_gravity="center"
         android:gravity="center" />
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
 
-    <EditText
-        android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:hint="@string/phone_number"
-        android:inputType="number"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:drawablePadding="10dp"
-        android:background="@drawable/edittextbackground"/>
+    // Phone Design
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputPhoneNumber"
+        android:hint="@string/phone_number1">
 
-    <EditText
-        android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:hint="@string/password"
-        android:background="@drawable/edittextbackground"
-        android:layout_marginStart="20dp"
-        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
-        android:drawablePadding="10dp"
-        android:layout_marginTop="10dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edittextbackground"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:minHeight="48dp" />
 
+    </com.google.android.material.textfield.TextInputLayout>
+
+    // Password Design
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputPasswordNumber"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/orange"
+        android:hint="@string/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edittextbackground"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    // Forget Password Text
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,7 +96,9 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="30dp" />
 
+    // Login Button
     <Button
+        android:id="@+id/Login"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:text="@string/login"
@@ -77,6 +108,7 @@
         android:textStyle="bold"
         android:layout_marginTop="30dp" />
 
+    // Notice Text hindi
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -85,6 +117,7 @@
         android:layout_gravity="center"
         />
 
+    // SignUp Button
     <Button
         android:id="@+id/signUp"
         android:layout_width="wrap_content"
@@ -95,6 +128,9 @@
         android:textColor="@color/black"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
 
 
 

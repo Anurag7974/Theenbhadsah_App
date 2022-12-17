@@ -17,6 +17,9 @@
             android:name=".signUpScreen"
             android:exported="false" />
         <activity
+            android:name=".HomeScreen"
+            android:exported="false" />
+        <activity
             android:name=".loginScreen"
             android:exported="false" />
         <activity

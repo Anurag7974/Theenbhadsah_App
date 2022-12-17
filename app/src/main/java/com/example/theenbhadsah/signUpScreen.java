@@ -28,6 +28,5 @@ public class signUpScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }
