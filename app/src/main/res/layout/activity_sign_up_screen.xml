@@ -6,8 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/backgroungsign"
-    tools:context=".signUpScreen">
+    tools:context=".signUpScreen"
+    tools:ignore="ExtraText">
 
+    // Hello Text
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,10 +21,12 @@
         android:paddingTop="50dp"
         />
 
+
+    //SignUp Text
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up !"
+        android:text="@string/sign_up1"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -31,12 +35,15 @@
 
     <LinearLayout
         android:layout_width="300dp"
-        android:layout_height="350dp"
+        android:layout_height="400dp"
         android:orientation="vertical"
         android:layout_gravity="center"
         android:layout_marginTop="55dp"
-        android:background="@drawable/edittextbackgroundd">
+        android:background="@drawable/edittextbackgroundd"
+        tools:ignore="ExtraText">
 
+
+        // Create Account Text
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,35 +53,54 @@
             android:layout_gravity="center"
             />
 
+        // Filename Design
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Full Name">
         <EditText
             android:layout_width="250dp"
             android:layout_height="50dp"
-            android:hint="Full Name"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/ic_baseline_person_24"
             android:drawablePadding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        // PhoneNumber Design
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/phone_number">
 
         <EditText
             android:layout_width="250dp"
             android:layout_height="50dp"
-            android:hint="@string/phone_number"
             android:inputType="number"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/ic_baseline_phone_24"
             android:drawablePadding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        // Password Design
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/password"
+            app:passwordToggleEnabled="true">
 
         <EditText
             android:layout_width="250dp"
             android:layout_height="50dp"
-            android:hint="@string/password2"
+            android:inputType="textPassword"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/ic_baseline_lock_24"
-            android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
             android:drawablePadding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
+        //SignUp Button
         <Button
             android:layout_width="130dp"
             android:layout_height="wrap_content"
@@ -85,6 +111,7 @@
             android:textStyle="bold"
             android:layout_marginTop="30dp" />
 
+        //Login Button
         <Button
             android:id="@+id/Login"
             android:layout_width="wrap_content"

@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class loginScreen extends AppCompatActivity {
 
-    Button button;
+    Button button, button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class loginScreen extends AppCompatActivity {
         getWindow().setStatusBarColor(ContextCompat.getColor(loginScreen.this,R.color.orange));
 
         button = findViewById(R.id.signUp);
+        button1 = findViewById(R.id.Login);
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -30,5 +31,14 @@ public class loginScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(loginScreen.this, HomeScreen.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

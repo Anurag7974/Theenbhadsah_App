@@ -17,6 +17,9 @@
     <string name="password2">Password</string>
     <string name="sign_up2">Sign Up</string>
     <string name="login2">Login</string>
+    <string name="phone_number1">Phone Number</string>
+    <string name="phone_number2">Phone Number</string>
+    <string name="sign_up1">Sign Up !</string>
 
     />
 </resources>
