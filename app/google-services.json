@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "685423105691",
+    "firebase_url": "https://theenbhadsah-5b211-default-rtdb.firebaseio.com",
+    "project_id": "theenbhadsah-5b211",
+    "storage_bucket": "theenbhadsah-5b211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685423105691:android:1840b6f82042193868583e",
+        "android_client_info": {
+          "package_name": "com.example.theenbhadsah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685423105691-dld9v5ms20m6cp3sg9998dhbpq92nr1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpTOSrMoK84p6JBXfEb16XrvEKDcycS4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685423105691-dld9v5ms20m6cp3sg9998dhbpq92nr1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

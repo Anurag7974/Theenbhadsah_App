@@ -19,7 +19,7 @@
         android:paddingStart="20dp"
         android:textStyle="bold"
         android:paddingTop="50dp"
-        />
+        tools:ignore="RtlSymmetry" />
 
 
     //SignUp Text
@@ -31,7 +31,7 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:paddingStart="20dp"
-        />
+        tools:ignore="RtlSymmetry" />
 
     <LinearLayout
         android:layout_width="300dp"
@@ -55,11 +55,12 @@
 
         // Filename Design
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Full Name">
-        <EditText
+            android:hint="@string/full_name">
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -69,39 +70,45 @@
 
         // PhoneNumber Design
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="@string/phone_number">
 
-        <EditText
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:drawablePadding="10dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         // Password Design
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="@string/password"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/orange">
 
-        <EditText
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:inputType="textPassword"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:drawablePadding="10dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         //SignUp Button
         <Button
+            android:id="@+id/regBtn"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:text="@string/sign_up2"
@@ -113,7 +120,7 @@
 
         //Login Button
         <Button
-            android:id="@+id/Login"
+            android:id="@+id/regToLoginBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/login2"
